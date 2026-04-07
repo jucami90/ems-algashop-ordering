@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.commons.validator.routines.EmailValidator;
 
-
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
