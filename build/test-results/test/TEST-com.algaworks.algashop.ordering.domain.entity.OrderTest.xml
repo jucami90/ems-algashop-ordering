@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.algaworks.algashop.ordering.domain.entity.OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-12T22:23:48.149Z" hostname="192.168.0.36" time="0.035">
+  <properties/>
+  <testcase name="givenDraftOrder_whenChangeItem_shouldRecalculate()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.035"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

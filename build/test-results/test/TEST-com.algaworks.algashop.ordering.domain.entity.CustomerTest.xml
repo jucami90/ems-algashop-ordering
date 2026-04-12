@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.entity.CustomerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-01T17:11:19.765Z" hostname="192.168.0.224" time="0.023">
-  <properties/>
-  <testcase name="given_brandNewCustomer_whenAddInvalidLoyaltyPoints_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.entity.CustomerTest" time="0.023"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
