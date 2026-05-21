@@ -1,8 +1,11 @@
 package com.algaworks.algashop.ordering.domain.entity;
 
-import com.algaworks.algashop.ordering.domain.valueobject.*;
-import com.algaworks.algashop.ordering.domain.valueobject.id.CustomerId;
-import com.algaworks.algashop.ordering.domain.valueobject.id.ProductId;
+import com.algaworks.algashop.ordering.domain.model.entity.Order;
+import com.algaworks.algashop.ordering.domain.model.entity.OrderStatus;
+import com.algaworks.algashop.ordering.domain.model.entity.PaymentMethod;
+import com.algaworks.algashop.ordering.domain.model.valueobject.*;
+import com.algaworks.algashop.ordering.domain.model.valueobject.id.CustomerId;
+import com.algaworks.algashop.ordering.domain.model.valueobject.id.ProductId;
 
 import java.time.LocalDate;
 
@@ -15,8 +18,8 @@ public class OrderTestDataBuilder {
     private Money shippingCost = new Money("10.00");
     private LocalDate expectedDeliveryDate = LocalDate.now().plusWeeks(1);
 
-    private ShippingInfo shippingInfo = aShippingInfo();
-    private BillingInfo billingInfo = aBillingInfo();
+    private Shipping shippingInfo = aShippingInfo();
+    private Billing billingInfo = aBillingInfo();
 
     private boolean withItems = true;
 
@@ -63,20 +66,23 @@ public class OrderTestDataBuilder {
         return order;
     }
 
-    public static BillingInfo aBillingInfo() {
-        return BillingInfo.builder()
+    public static Billing aBillingInfo() {
+        return Billing.builder()
                 .address(anAddress())
                 .document(new Document("225-09-1992"))
                 .phone(new Phone("123-111-9911"))
                 .fullName(new FullName("John", "Doe")).build();
     }
 
-    public static ShippingInfo aShippingInfo() {
-        return ShippingInfo.builder()
+    public static Shipping aShippingInfo() {
+        return Shipping.builder()
                 .address(anAddress())
-                .fullName(new FullName("John", "Doe"))
-                .document(new Document("112-33-2321"))
-                .phone(new Phone("111-441-1244")).build();
+                .recipient(Recipient.builder()
+                        .fullName(new FullName("Jose","Miranda"))
+                        .document(new Document("112-33-2321"))
+                        .phone(new Phone("111-441-1244")).build())
+                .cost(new Money("10.00"))
+                .expectedDate(LocalDate.now().plusWeeks(1)).build();
     }
 
     public static Address anAddress() {
@@ -110,12 +116,12 @@ public class OrderTestDataBuilder {
         return this;
     }
 
-    public OrderTestDataBuilder shippingInfo(ShippingInfo shippingInfo) {
+    public OrderTestDataBuilder shippingInfo(Shipping shippingInfo) {
         this.shippingInfo = shippingInfo;
         return this;
     }
 
-    public OrderTestDataBuilder billingInfo(BillingInfo billingInfo) {
+    public OrderTestDataBuilder billingInfo(Billing billingInfo) {
         this.billingInfo = billingInfo;
         return this;
     }
