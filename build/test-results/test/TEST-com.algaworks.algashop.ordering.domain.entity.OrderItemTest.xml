@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.entity.OrderItemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-22T00:00:30.295Z" hostname="192.168.0.54" time="0.0">
-  <properties/>
-  <testcase name="shouldGenerate()" classname="com.algaworks.algashop.ordering.domain.entity.OrderItemTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

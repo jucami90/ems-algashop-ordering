@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-22T16:12:25.700Z" hostname="192.168.0.54" time="0.005">
+  <properties/>
+  <testcase name="givenItem_whenChangeAvailability_shouldUpdateStatus()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest" time="0.002"/>
+  <testcase name="givenItem_whenChangeQuantity_shouldRecalculateTotal()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest" time="0.0"/>
+  <testcase name="givenItem_whenChangePrice_shouldRecalculateTotal()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest" time="0.001"/>
+  <testcase name="givenEqualIds_whenCompareItems_shouldBeEqual()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest" time="0.001"/>
+  <testcase name="givenDifferentIds_whenCompareItems_shouldNotBeEqual()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest" time="0.0"/>
+  <testcase name="givenValidData_whenCreateNewItem_shouldInitializeCorrectly()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

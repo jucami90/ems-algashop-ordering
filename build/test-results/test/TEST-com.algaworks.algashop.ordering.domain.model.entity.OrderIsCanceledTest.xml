@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderIsCanceledTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-22T16:12:25.666Z" hostname="192.168.0.54" time="0.002">
+  <properties/>
+  <testcase name="givenOrderInAnyOtherStatus_whenIsCanceled_shouldReturnFalse()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsCanceledTest" time="0.001"/>
+  <testcase name="givenCanceledOrder_whenIsCanceled_shouldReturnTrue()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsCanceledTest" time="0.001"/>
+  <testcase name="givenNonCanceledOrder_whenIsCanceled_shouldReturnFalse()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsCanceledTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

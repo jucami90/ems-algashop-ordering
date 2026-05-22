@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">24</div>
+<div class="counter">71</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">5</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m33.62s</div>
+<div class="counter">0.146s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">79%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,40 +58,12 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a href="#">Failed tests</a>
-</li>
-<li>
 <a href="#">Packages</a>
 </li>
 <li>
 <a href="#">Classes</a>
 </li>
 </ul>
-<div class="tab">
-<h2>Failed tests</h2>
-<ul class="linkList">
-<li>
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html">OrderTest</a>.
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html#givenDraftOrderAndDeliveryDateInThePast_whenChangeShippingInfo_shouldNotAllowChange()">givenDraftOrderAndDeliveryDateInThePast_whenChangeShippingInfo_shouldNotAllowChange()</a>
-</li>
-<li>
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html">OrderTest</a>.
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html#givenDraftOrder_whenChangeBillingInfo_shouldAllowChange()">givenDraftOrder_whenChangeBillingInfo_shouldAllowChange()</a>
-</li>
-<li>
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html">OrderTest</a>.
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html#givenDraftOrder_whenChangeItem_shouldRecalculate()">givenDraftOrder_whenChangeItem_shouldRecalculate()</a>
-</li>
-<li>
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html">OrderTest</a>.
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html#givenDraftOrder_whenChangeShippingInfo_shouldAllowChange()">givenDraftOrder_whenChangeShippingInfo_shouldAllowChange()</a>
-</li>
-<li>
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html">OrderTest</a>.
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html#shouldCalculateTotals()">shouldCalculateTotals()</a>
-</li>
-</ul>
-</div>
 <div class="tab">
 <h2>Packages</h2>
 <table>
@@ -107,14 +79,34 @@
 </thead>
 <tbody>
 <tr>
-<td class="failures">
-<a href="packages/com.algaworks.algashop.ordering.domain.entity.html">com.algaworks.algashop.ordering.domain.entity</a>
+<td class="success">
+<a href="packages/com.algaworks.algashop.ordering.domain.model.entity.html">com.algaworks.algashop.ordering.domain.model.entity</a>
 </td>
-<td>20</td>
-<td>5</td>
+<td>62</td>
 <td>0</td>
-<td>1m33.62s</td>
-<td class="failures">75%</td>
+<td>0</td>
+<td>0.143s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.algaworks.algashop.ordering.domain.model.factory.html">com.algaworks.algashop.ordering.domain.model.factory</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.algaworks.algashop.ordering.domain.model.valueobject.html">com.algaworks.algashop.ordering.domain.model.valueobject</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
@@ -145,19 +137,89 @@
 <tbody>
 <tr>
 <td class="success">
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.CustomerTest.html">com.algaworks.algashop.ordering.domain.entity.CustomerTest</a>
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.CustomerTest.html">com.algaworks.algashop.ordering.domain.model.entity.CustomerTest</a>
 </td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
-<td>0.010s</td>
+<td>0.095s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderItemTest.html">com.algaworks.algashop.ordering.domain.entity.OrderItemTest</a>
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.008s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest</a>
+</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0.003s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderIsCanceledTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderIsCanceledTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.002s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderItemTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderItemTest</a>
 </td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderMarkAsReadyTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderMarkAsReadyTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.002s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderRemoveItemTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderRemoveItemTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.003s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderStatusTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderStatusTest</a>
+</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0s</td>
@@ -165,23 +227,53 @@
 </tr>
 <tr>
 <td class="success">
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderStatusTest.html">com.algaworks.algashop.ordering.domain.entity.OrderStatusTest</a>
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.OrderTest.html">com.algaworks.algashop.ordering.domain.model.entity.OrderTest</a>
 </td>
-<td>2</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0.016s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest.html">com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartItemTest</a>
+</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0.005s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest.html">com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest</a>
+</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0.007s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.factory.OrderFactoryTest.html">com.algaworks.algashop.ordering.domain.model.factory.OrderFactoryTest</a>
+</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures">
-<a href="classes/com.algaworks.algashop.ordering.domain.entity.OrderTest.html">com.algaworks.algashop.ordering.domain.entity.OrderTest</a>
+<td class="success">
+<a href="classes/com.algaworks.algashop.ordering.domain.model.valueobject.LoyaltyPointsTest.html">com.algaworks.algashop.ordering.domain.model.valueobject.LoyaltyPointsTest</a>
 </td>
-<td>11</td>
-<td>5</td>
+<td>4</td>
 <td>0</td>
-<td>1m33.61s</td>
-<td class="failures">54%</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
@@ -204,7 +296,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 21, 2026, 9:00:30 PM</p>
+<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 22, 2026, 1:12:25 PM</p>
 </div>
 </div>
 </body>
