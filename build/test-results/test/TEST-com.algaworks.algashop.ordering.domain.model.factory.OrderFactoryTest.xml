@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.factory.OrderFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-22T20:10:50.080Z" hostname="192.168.0.54" time="0.001">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.factory.OrderFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-22T21:10:13.559Z" hostname="192.168.0.54" time="0.002">
   <properties/>
-  <testcase name="shouldGenerateFilledOrderThatCanBePlaced()" classname="com.algaworks.algashop.ordering.domain.model.factory.OrderFactoryTest" time="0.001"/>
+  <testcase name="shouldGenerateFilledOrderThatCanBePlaced()" classname="com.algaworks.algashop.ordering.domain.model.factory.OrderFactoryTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
