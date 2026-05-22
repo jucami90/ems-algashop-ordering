@@ -35,16 +35,24 @@ public class OrderTestDataBuilder {
 
     public Order build() {
         Order order = Order.draft(customerId);
-        order.changeShipping(shippingInfo, shippingCost, expectedDeliveryDate);
+        order.changeShipping(shippingInfo);
         order.changeBilling(billingInfo);
         order.changePaymentMethod(paymentMethod);
 
         if (withItems) {
-            order.addItem(new ProductId(), new ProductName("Notebook X11"),
-                    new Money("3000"), new Quantity(2));
+            order.addItem(Product.builder()
+                            .id(new ProductId())
+                            .name(new ProductName("Mouse pad"))
+                            .price(new Money("100"))
+                            .inStock(true).build(),
+                        new Quantity(2));
 
-            order.addItem(new ProductId(), new ProductName("4GB RAM"),
-                    new Money("200"), new Quantity(1));
+            order.addItem(Product.builder()
+                            .id(new ProductId())
+                    .name(new ProductName("4GB RAM"))
+                    .price(new Money("200"))
+                    .inStock(true).build(), new Quantity(1));
+
         }
 
         switch (this.status) {
@@ -71,7 +79,8 @@ public class OrderTestDataBuilder {
                 .address(anAddress())
                 .document(new Document("225-09-1992"))
                 .phone(new Phone("123-111-9911"))
-                .fullName(new FullName("John", "Doe")).build();
+                .fullName(new FullName("John", "Doe"))
+                .email(new Email("jucami90@gmail.com")).build();
     }
 
     public static Shipping aShippingInfo() {

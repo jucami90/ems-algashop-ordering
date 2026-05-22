@@ -5,7 +5,6 @@ import com.algaworks.algashop.ordering.domain.model.valueobject.*;
 import com.algaworks.algashop.ordering.domain.model.valueobject.id.CustomerId;
 import com.algaworks.algashop.ordering.domain.model.valueobject.id.OrderId;
 import com.algaworks.algashop.ordering.domain.model.valueobject.id.OrderItemId;
-import com.algaworks.algashop.ordering.domain.model.valueobject.id.ProductId;
 import lombok.Builder;
 
 import java.math.BigDecimal;
@@ -16,7 +15,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class Order {
+public class Order implements AggregateRoot<OrderId> {
 
     private OrderId id;
     private CustomerId customerId;
@@ -35,21 +34,20 @@ public class Order {
     private OrderStatus status;
     private PaymentMethod paymentMethod;
 
-    private Money shippingCost;
-    private LocalDate expectedDeliveryDate;
-
     private Set<OrderItem> items;
 
+    private Long version;
+
     @Builder(builderClassName = "ExistingOrderBuilder", builderMethodName = "existing")
-    public Order(OrderId id, CustomerId customerId,
+    public Order(OrderId id, Long version, CustomerId customerId,
                  Money totalAmount, Quantity totalItems,
                  OffsetDateTime placedAt, OffsetDateTime paidAt,
                  OffsetDateTime canceledAt, OffsetDateTime readyAt,
                  Billing billing, Shipping shipping,
                  OrderStatus status, PaymentMethod paymentMethod,
-                 Money shippingCost, LocalDate expectedDeliveryDate,
                  Set<OrderItem> items) {
         this.setId(id);
+        this.setVersion(version);
         this.setCustomerId(customerId);
         this.setTotalAmount(totalAmount);
         this.setTotalItems(totalItems);
@@ -61,14 +59,13 @@ public class Order {
         this.setShipping(shipping);
         this.setStatus(status);
         this.setPaymentMethod(paymentMethod);
-        this.setShippingCost(shippingCost);
-        this.setExpectedDeliveryDate(expectedDeliveryDate);
         this.setItems(items);
     }
 
     public static Order draft(CustomerId customerId) {
         return new Order(
                 new OrderId(),
+                null,
                 customerId,
                 Money.ZERO,
                 Quantity.ZERO,
@@ -79,8 +76,6 @@ public class Order {
                 null,
                 null,
                 OrderStatus.DRAFT,
-                null,
-                null,
                 null,
                 new HashSet<>()
         );
@@ -111,17 +106,23 @@ public class Order {
 
     public void place() {
         this.verifyIfCanChangeToPlaced();
-        this.setPlacedAt(OffsetDateTime.now());
         this.changeStatus(OrderStatus.PLACED);
+        this.setPlacedAt(OffsetDateTime.now());
     }
 
     public void markAsPaid() {
-        this.setPaidAt(OffsetDateTime.now());
         this.changeStatus(OrderStatus.PAID);
+        this.setPaidAt(OffsetDateTime.now());
+    }
+
+    public void markAsReady() {
+        this.changeStatus(OrderStatus.READY);
+        this.setReadyAt(OffsetDateTime.now());
     }
 
     public void changePaymentMethod(PaymentMethod paymentMethod) {
         Objects.requireNonNull(paymentMethod);
+        this.verifyIfChangeable();
         this.setPaymentMethod(paymentMethod);
     }
 
@@ -147,10 +148,27 @@ public class Order {
         Objects.requireNonNull(orderItemId);
         Objects.requireNonNull(quantity);
 
+        this.verifyIfChangeable();
+
         OrderItem orderItem = this.findOrderItem(orderItemId);
         orderItem.changeQuantity(quantity);
 
         this.recalculateTotals();
+    }
+
+    public void removeItem(OrderItemId orderItemId) {
+        Objects.requireNonNull(orderItemId);
+        this.verifyIfChangeable();
+
+        OrderItem orderItem = findOrderItem(orderItemId);
+        this.items.remove(orderItem);
+
+        this.recalculateTotals();
+    }
+
+    public void cancel() {
+        this.setCanceledAt(OffsetDateTime.now());
+        this.changeStatus(OrderStatus.CANCELED);
     }
 
     public boolean isDraft() {
@@ -163,6 +181,14 @@ public class Order {
 
     public boolean isPaid() {
         return OrderStatus.PAID.equals(this.status());
+    }
+
+    public boolean isReady() {
+        return OrderStatus.READY.equals(this.status());
+    }
+
+    public boolean isCanceled() {
+        return OrderStatus.CANCELED.equals(this.status());
     }
 
     public OrderId id() {
@@ -213,14 +239,6 @@ public class Order {
         return paymentMethod;
     }
 
-    public Money shippingCost() {
-        return shippingCost;
-    }
-
-    public LocalDate expectedDeliveryDate() {
-        return expectedDeliveryDate;
-    }
-
     public Set<OrderItem> items() {
         return Collections.unmodifiableSet(this.items);
     }
@@ -233,10 +251,10 @@ public class Order {
                 .reduce(0, Integer::sum);
 
         BigDecimal shippingCost;
-        if(this.shippingCost() == null) {
+        if(this.shipping() == null) {
             shippingCost = BigDecimal.ZERO;
         } else {
-            shippingCost = this.shippingCost.value();
+            shippingCost = this.shipping().cost().value();
         }
 
         BigDecimal totalAmount = totalItemsAmount.add(shippingCost);
@@ -280,6 +298,14 @@ public class Order {
         if (!this.isDraft()) {
             throw new OrderCannotBeEditedException(this.id(), this.status());
         }
+    }
+
+    public Long version() {
+        return version;
+    }
+
+    private void setVersion(Long version) {
+        this.version = version;
     }
 
     private void setId(OrderId id) {
@@ -333,14 +359,6 @@ public class Order {
 
     private void setPaymentMethod(PaymentMethod paymentMethod) {
         this.paymentMethod = paymentMethod;
-    }
-
-    private void setShippingCost(Money shippingCost) {
-        this.shippingCost = shippingCost;
-    }
-
-    private void setExpectedDeliveryDate(LocalDate expectedDeliveryDate) {
-        this.expectedDeliveryDate = expectedDeliveryDate;
     }
 
     private void setItems(Set<OrderItem> items) {

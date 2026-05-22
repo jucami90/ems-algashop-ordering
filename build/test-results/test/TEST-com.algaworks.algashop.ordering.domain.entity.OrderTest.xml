@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.entity.OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-12T22:23:48.149Z" hostname="192.168.0.36" time="0.035">
+<testsuite name="com.algaworks.algashop.ordering.domain.entity.OrderTest" tests="11" skipped="0" failures="5" errors="0" timestamp="2026-05-21T23:58:56.664Z" hostname="192.168.0.54" time="93.617">
   <properties/>
-  <testcase name="givenDraftOrder_whenChangeItem_shouldRecalculate()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.035"/>
+  <testcase name="givenDraftOrder_whenChangePaymentMethod_shouldAllowChange()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.03"/>
+  <testcase name="givenPlacedOrder_whenMarkAsPaid_shouldChangeToPaid()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.016"/>
+  <testcase name="givenDraftOrder_whenChangeShippingInfo_shouldAllowChange()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="93.558">
+    <failure message="org.assertj.core.error.AssertJMultipleFailuresError: &#10;Multiple Failures (2 failures)&#10;-- failure 1 --&#10;expected: 0.00&#10; but was: null&#10;at OrderTest.lambda$givenDraftOrder_whenChangeShippingInfo_shouldAllowChange$6(OrderTest.java:178)&#10;-- failure 2 --&#10;expected: 2026-05-22 (java.time.LocalDate)&#10; but was: null&#10;at OrderTest.lambda$givenDraftOrder_whenChangeShippingInfo_shouldAllowChange$7(OrderTest.java:179)" type="org.assertj.core.error.AssertJMultipleFailuresError">org.assertj.core.error.AssertJMultipleFailuresError: 
+Multiple Failures (2 failures)
+-- failure 1 --
+expected: 0.00
+ but was: null
+at OrderTest.lambda$givenDraftOrder_whenChangeShippingInfo_shouldAllowChange$6(OrderTest.java:178)
+-- failure 2 --
+expected: 2026-05-22 (java.time.LocalDate)
+ but was: null
+at OrderTest.lambda$givenDraftOrder_whenChangeShippingInfo_shouldAllowChange$7(OrderTest.java:179)
+	at app//com.algaworks.algashop.ordering.domain.entity.OrderTest.givenDraftOrder_whenChangeShippingInfo_shouldAllowChange(OrderTest.java:176)
+	at java.base@21.0.8/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.8/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.8/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="givenDraftOrder_whenChangeBillingInfo_shouldAllowChange()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.002">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at com.algaworks.algashop.ordering.domain.model.valueobject.Billing.&lt;init&gt;(Billing.java:13)
+	at com.algaworks.algashop.ordering.domain.model.valueobject.Billing$BillingBuilder.build(Billing.java:7)
+	at com.algaworks.algashop.ordering.domain.entity.OrderTest.givenDraftOrder_whenChangeBillingInfo_shouldAllowChange(OrderTest.java:144)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="shouldGenerateExceptionWhenTryToChangeItemSet()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.002"/>
+  <testcase name="shouldAddItem()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.002"/>
+  <testcase name="givenDraftOrderAndDeliveryDateInThePast_whenChangeShippingInfo_shouldNotAllowChange()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.002">
+    <failure message="java.lang.AssertionError: &#10;Expecting code to raise a throwable." type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting code to raise a throwable.
+	at com.algaworks.algashop.ordering.domain.entity.OrderTest.givenDraftOrderAndDeliveryDateInThePast_whenChangeShippingInfo_shouldNotAllowChange(OrderTest.java:207)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="shouldGenerate()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.0"/>
+  <testcase name="givenDraftOrder_whenPlace_shouldChangeToPlaced()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.0"/>
+  <testcase name="givenDraftOrder_whenChangeItem_shouldRecalculate()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at com.algaworks.algashop.ordering.domain.model.valueobject.Product.&lt;init&gt;(Product.java:17)
+	at com.algaworks.algashop.ordering.domain.model.valueobject.Product$ProductBuilder.build(Product.java:9)
+	at com.algaworks.algashop.ordering.domain.entity.OrderTest.givenDraftOrder_whenChangeItem_shouldRecalculate(OrderTest.java:218)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="shouldCalculateTotals()" classname="com.algaworks.algashop.ordering.domain.entity.OrderTest" time="0.0">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at com.algaworks.algashop.ordering.domain.model.valueobject.Product.&lt;init&gt;(Product.java:17)
+	at com.algaworks.algashop.ordering.domain.model.valueobject.Product$ProductBuilder.build(Product.java:9)
+	at com.algaworks.algashop.ordering.domain.entity.OrderTest.shouldCalculateTotals(OrderTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

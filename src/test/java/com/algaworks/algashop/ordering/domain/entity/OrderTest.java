@@ -27,9 +27,11 @@ public class OrderTest {
         ProductId productId = new ProductId();
 
         order.addItem(
-                productId,
-                new ProductName("Mouse pad"),
-                new Money("100"),
+                Product.builder()
+                        .id(productId)
+                        .name(new ProductName("Mouse pad"))
+                        .price(new Money("100"))
+                        .inStock(true).build(),
                 new Quantity(1)
         );
 
@@ -49,12 +51,13 @@ public class OrderTest {
     @Test
     public void shouldGenerateExceptionWhenTryToChangeItemSet() {
         Order order = Order.draft(new CustomerId());
-        ProductId productId = new ProductId();
-
         order.addItem(
-                productId,
-                new ProductName("Mouse pad"),
-                new Money("100"),
+                Product.builder()
+                        .id(new ProductId())
+                        .name(new ProductName("Mouse pad"))
+                        .price(new Money("100"))
+                        .inStock(true)
+                        .build(),
                 new Quantity(1)
         );
 
@@ -70,16 +73,18 @@ public class OrderTest {
         ProductId productId = new ProductId();
 
         order.addItem(
-                productId,
-                new ProductName("Mouse pad"),
-                new Money("100"),
+                Product.builder()
+                        .name(new ProductName("Mouse pad"))
+                        .price(new Money("100"))
+                        .build(),
                 new Quantity(2)
         );
 
         order.addItem(
-                productId,
-                new ProductName("RAM Memory"),
-                new Money("50"),
+                Product.builder()
+                        .name(new ProductName("Keyboard"))
+                        .price(new Money("50"))
+                        .build(),
                 new Quantity(1)
         );
 
@@ -120,17 +125,18 @@ public class OrderTest {
                 .state("South Carolina")
                 .zipCode(new ZipCode("79911")).build();
 
-        BillingInfo billingInfo = BillingInfo.builder()
+        Billing billingInfo = Billing.builder()
                 .address(address)
                 .document(new Document("225-09-1992"))
                 .phone(new Phone("123-111-9911"))
                 .fullName(new FullName("John", "Doe"))
+                .email(new Email("jucami90@gmail.com"))
                 .build();
 
         Order order = Order.draft(new CustomerId());
         order.changeBilling(billingInfo);
 
-        BillingInfo expectedBillingInfo = BillingInfo.builder()
+        Billing expectedBillingInfo = Billing.builder()
                 .address(address)
                 .document(new Document("225-09-1992"))
                 .phone(new Phone("123-111-9911"))
@@ -151,18 +157,21 @@ public class OrderTest {
                 .state("South Carolina")
                 .zipCode(new ZipCode("79911")).build();
 
-        ShippingInfo shippingInfo = ShippingInfo.builder()
+        Shipping shippingInfo = Shipping.builder()
                 .address(address)
-                .fullName(new FullName("John", "Doe"))
-                .document(new Document("112-33-2321"))
-                .phone(new Phone("111-441-1244"))
-                .build();
+                .recipient(Recipient.builder()
+                        .fullName(new FullName("Jose","Mae"))
+                        .document(new Document("112-33-2321"))
+                        .phone(new Phone("111-441-1244")).build())
+                .cost(Money.ZERO)
+                .expectedDate(LocalDate.now().plusDays(1)).build();
+
 
         Order order = Order.draft(new CustomerId());
         Money shippingCost = Money.ZERO;
         LocalDate expectedDeliveryDate = LocalDate.now().plusDays(1);
 
-        order.changeShipping(shippingInfo, shippingCost, expectedDeliveryDate);
+        order.changeShipping(shippingInfo);
 
         Assertions.assertWith(order,
                 o -> Assertions.assertThat(o.shipping()).isEqualTo(shippingInfo),
@@ -183,20 +192,19 @@ public class OrderTest {
                 .state("South Carolina")
                 .zipCode(new ZipCode("79911")).build();
 
-        ShippingInfo shippingInfo = ShippingInfo.builder()
+        Shipping shippingInfo = Shipping.builder()
                 .address(address)
-                .fullName(new FullName("John", "Doe"))
-                .document(new Document("112-33-2321"))
-                .phone(new Phone("111-441-1244"))
-                .build();
+                .recipient(Recipient.builder()
+                        .fullName(new FullName("Jose","Mae"))
+                        .document(new Document("112-33-2321"))
+                        .phone(new Phone("111-441-1244")).build())
+                .cost(new Money("50"))
+                .expectedDate(LocalDate.now().plusDays(1)).build();
 
         Order order = Order.draft(new CustomerId());
-        Money shippingCost = Money.ZERO;
-
-        LocalDate expectedDeliveryDate = LocalDate.now().minusDays(2);
 
         Assertions.assertThatExceptionOfType(OrderInvalidShippingDeliveryDateException.class)
-                .isThrownBy(()-> order.changeShipping(shippingInfo, shippingCost, expectedDeliveryDate));
+                .isThrownBy(()-> order.changeShipping(shippingInfo));
     }
 
     @Test
@@ -204,9 +212,10 @@ public class OrderTest {
         Order order = Order.draft(new CustomerId());
 
         order.addItem(
-                new ProductId(),
-                new ProductName("Mouse pad"),
-                new Money("100"),
+                Product.builder()
+                        .name(new ProductName("Mouse pad"))
+                        .price(new Money("100"))
+                        .build(),
                 new Quantity(3)
         );
 
