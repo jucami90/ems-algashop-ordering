@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-22T16:12:25.554Z" hostname="192.168.0.54" time="0.097">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-22T20:10:49.988Z" hostname="192.168.0.54" time="0.041">
   <properties/>
-  <testcase name="given_invalidEmail_whenTryUpdatedCustomerEmail_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.084"/>
-  <testcase name="given_brandNewCustomer_whenAddInvalidLoyaltyPoints_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.0"/>
+  <testcase name="given_invalidEmail_whenTryUpdatedCustomerEmail_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.03"/>
+  <testcase name="given_brandNewCustomer_whenAddInvalidLoyaltyPoints_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.001"/>
   <testcase name="given_unarchivedCustomer_whenArchive_shouldAnonymize()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.007"/>
-  <testcase name="given_archivedCustomer_whenTryToUpdate_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.0"/>
-  <testcase name="given_brandNewCustomer_whenAddLoyaltyPoints_shouldSumPoints()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.003"/>
+  <testcase name="given_archivedCustomer_whenTryToUpdate_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.001"/>
+  <testcase name="given_brandNewCustomer_whenAddLoyaltyPoints_shouldSumPoints()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.001"/>
   <testcase name="given_invalidEmail_whenTryCreateCustomer_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.CustomerTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

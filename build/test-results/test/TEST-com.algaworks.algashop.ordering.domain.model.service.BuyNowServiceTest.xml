@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.algaworks.algashop.ordering.domain.model.service.BuyNowServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-22T20:10:50.083Z" hostname="192.168.0.54" time="0.001">
+  <properties/>
+  <testcase name="givenValidProductAndDetails_whenBuyNow_shouldReturnPlacedOrder()" classname="com.algaworks.algashop.ordering.domain.model.service.BuyNowServiceTest" time="0.0"/>
+  <testcase name="givenInvalidQuantity_whenBuyNow_shouldThrowIllegalArgumentException()" classname="com.algaworks.algashop.ordering.domain.model.service.BuyNowServiceTest" time="0.001"/>
+  <testcase name="givenOutOfStockProduct_whenBuyNow_shouldThrowProductOutOfStockException()" classname="com.algaworks.algashop.ordering.domain.model.service.BuyNowServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
