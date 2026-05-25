@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.service.ShoppingServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-22T21:10:13.976Z" hostname="192.168.0.54" time="0.02">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.service.ShoppingServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-25T04:19:05.804Z" hostname="192.168.0.54" time="0.022">
   <properties/>
-  <testcase name="givenExistingCustomerAndExistingShoppingCart_whenStartShopping_shouldThrowCustomerAlreadyHaveShoppingCartException()" classname="com.algaworks.algashop.ordering.domain.model.service.ShoppingServiceTest" time="0.017"/>
+  <testcase name="givenExistingCustomerAndExistingShoppingCart_whenStartShopping_shouldThrowCustomerAlreadyHaveShoppingCartException()" classname="com.algaworks.algashop.ordering.domain.model.service.ShoppingServiceTest" time="0.018"/>
   <testcase name="givenNonExistingCustomer_whenStartShopping_shouldThrowCustomerNotFoundException()" classname="com.algaworks.algashop.ordering.domain.model.service.ShoppingServiceTest" time="0.002"/>
   <testcase name="givenExistingCustomerAndNoShoppingCart_whenStartShopping_shouldReturnNewShoppingCart()" classname="com.algaworks.algashop.ordering.domain.model.service.ShoppingServiceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

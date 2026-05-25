@@ -41,7 +41,7 @@ public class ShoppingCartItem {
         this.recalculateTotals();
     }
 
-    void refresh(Product product) {
+    public void refresh(Product product) {
         Objects.requireNonNull(product);
         Objects.requireNonNull(product.id());
 
@@ -55,7 +55,7 @@ public class ShoppingCartItem {
         this.recalculateTotals();
     }
 
-    void changeQuantity(Quantity quantity) {
+    public void changeQuantity(Quantity quantity) {
         this.setQuantity(quantity);
         this.recalculateTotals();
     }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-05-22T21:10:13.518Z" hostname="192.168.0.54" time="0.004">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-05-25T04:19:05.318Z" hostname="192.168.0.54" time="0.004">
   <properties/>
-  <testcase name="givenDraftOrder_whenChangeIsPerformed_shouldNotThrowException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.002"/>
+  <testcase name="givenDraftOrder_whenChangeIsPerformed_shouldNotThrowException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.001"/>
   <testcase name="givenPlacedOrder_whenChangeShippingIsCalled_shouldThrowOrderCannotBeEditedException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.0"/>
-  <testcase name="givenPlacedOrder_whenChangePaymentMethodIsCalled_shouldThrowOrderCannotBeEditedException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.001"/>
+  <testcase name="givenPlacedOrder_whenChangePaymentMethodIsCalled_shouldThrowOrderCannotBeEditedException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.0"/>
   <testcase name="givenPlacedOrder_whenChangeItemQuantityIsCalled_shouldThrowOrderCannotBeEditedException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.0"/>
-  <testcase name="givenPlacedOrder_whenChangeBillingIsCalled_shouldThrowOrderCannotBeEditedException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.001"/>
+  <testcase name="givenPlacedOrder_whenChangeBillingIsCalled_shouldThrowOrderCannotBeEditedException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderChangingTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

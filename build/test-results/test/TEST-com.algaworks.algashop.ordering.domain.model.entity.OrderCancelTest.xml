@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-22T21:10:13.507Z" hostname="192.168.0.54" time="0.01">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-25T04:19:05.308Z" hostname="192.168.0.54" time="0.009">
   <properties/>
-  <testcase name="givenEmptyOrder_whenCancel_shouldAllow()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest" time="0.004"/>
+  <testcase name="givenEmptyOrder_whenCancel_shouldAllow()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest" time="0.003"/>
   <testcase name="givenFilledOrder_whenCancel_shouldAllow()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest" time="0.005"/>
   <testcase name="givenCanceledOrder_whenCancelAgain_shouldThrowException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderCancelTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

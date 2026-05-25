@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-05-22T21:10:13.533Z" hostname="192.168.0.54" time="0.012">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-05-25T04:19:05.335Z" hostname="192.168.0.54" time="0.012">
   <properties/>
-  <testcase name="givenDraftOrder_whenChangePaymentMethod_shouldAllowChange()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
-  <testcase name="shouldGenerateDraftOrder()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.002"/>
-  <testcase name="givenPlacedOrder_whenMarkAsPaid_shouldChangeToPaid()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
+  <testcase name="givenDraftOrder_whenChangePaymentMethod_shouldAllowChange()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
+  <testcase name="shouldGenerateDraftOrder()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.003"/>
+  <testcase name="givenPlacedOrder_whenMarkAsPaid_shouldChangeToPaid()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
   <testcase name="givenDraftOrder_whenChangeBilling_shouldAllowChange()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
   <testcase name="shouldGenerateExceptionWhenTryToChangeItemSet()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
   <testcase name="shouldAddItem()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
-  <testcase name="givenPlacedOrder_whenTryToPlace_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
-  <testcase name="givenDraftOrderAndDeliveryDateInThePast_whenChangeShipping_shouldNotAllowChange()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
-  <testcase name="givenOutOfStockProduct_whenTryToAddToAnOrder_shouldNotAllow()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
+  <testcase name="givenPlacedOrder_whenTryToPlace_shouldGenerateException()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
+  <testcase name="givenDraftOrderAndDeliveryDateInThePast_whenChangeShipping_shouldNotAllowChange()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
+  <testcase name="givenOutOfStockProduct_whenTryToAddToAnOrder_shouldNotAllow()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
   <testcase name="givenDraftOrder_whenChangeShipping_shouldAllowChange()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
-  <testcase name="givenDraftOrder_whenPlace_shouldChangeToPlaced()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
-  <testcase name="givenDraftOrder_whenChangeItem_shouldRecalculate()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
+  <testcase name="givenDraftOrder_whenPlace_shouldChangeToPlaced()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.001"/>
+  <testcase name="givenDraftOrder_whenChangeItem_shouldRecalculate()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
   <testcase name="shouldCalculateTotals()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-22T21:10:13.524Z" hostname="192.168.0.54" time="0.001">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-25T04:19:05.325Z" hostname="192.168.0.54" time="0.002">
   <properties/>
-  <testcase name="givenOrderWithStatusDraft_whenIsReady_shouldReturnFalse()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" time="0.0"/>
+  <testcase name="givenOrderWithStatusDraft_whenIsReady_shouldReturnFalse()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" time="0.001"/>
   <testcase name="givenOrderWithStatusPaid_whenIsReady_shouldReturnFalse()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" time="0.0"/>
-  <testcase name="givenOrderWithStatusReady_whenIsReady_shouldReturnTrue()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" time="0.001"/>
+  <testcase name="givenOrderWithStatusReady_whenIsReady_shouldReturnTrue()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" time="0.0"/>
   <testcase name="givenOrderWithStatusCanceled_whenIsReady_shouldReturnFalse()" classname="com.algaworks.algashop.ordering.domain.model.entity.OrderIsReadyTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

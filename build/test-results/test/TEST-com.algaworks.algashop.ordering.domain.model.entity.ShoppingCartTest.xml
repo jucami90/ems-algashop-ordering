@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-05-22T21:10:13.550Z" hostname="192.168.0.54" time="0.009">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-05-25T04:19:05.353Z" hostname="192.168.0.54" time="0.011">
   <properties/>
-  <testcase name="givenCartWithItems_whenRemoveNonexistentItem_shouldThrowShoppingCartDoesNotContainItemException()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.002"/>
+  <testcase name="givenCartWithItems_whenRemoveNonexistentItem_shouldThrowShoppingCartDoesNotContainItemException()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.004"/>
   <testcase name="givenCartWithItems_whenChangeItemPrice_shouldRecalculateTotalAmount()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.001"/>
-  <testcase name="givenCustomer_whenStartShopping_shouldInitializeEmptyCart()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.001"/>
+  <testcase name="givenCustomer_whenStartShopping_shouldInitializeEmptyCart()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.0"/>
   <testcase name="givenCartWithItems_whenChangeQuantityToZero_shouldThrowIllegalArgumentException()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.0"/>
   <testcase name="givenCartWithExistingProduct_whenAddSameProduct_shouldIncrementQuantity()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.001"/>
   <testcase name="givenEmptyCart_whenAddNewItem_shouldContainItemAndRecalculateTotals()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.0"/>
-  <testcase name="givenCartWithItems_whenDetectUnavailableItems_shouldReturnTrue()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.0"/>
+  <testcase name="givenCartWithItems_whenDetectUnavailableItems_shouldReturnTrue()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.001"/>
   <testcase name="givenCartWithItems_whenFindItemById_shouldReturnItem()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.0"/>
   <testcase name="givenDifferentIds_whenCompareItems_shouldNotBeEqual()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.001"/>
   <testcase name="givenCartWithItems_whenEmpty_shouldClearAllItemsAndResetTotals()" classname="com.algaworks.algashop.ordering.domain.model.entity.ShoppingCartTest" time="0.0"/>
