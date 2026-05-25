@@ -1,8 +1,9 @@
 package com.algaworks.algashop.ordering.domain.model.entity;
 
 
-import com.algaworks.algashop.ordering.domain.model.valueobject.*;
-import com.algaworks.algashop.ordering.domain.model.valueobject.id.CustomerId;
+import com.algaworks.algashop.ordering.domain.model.commons.*;
+import com.algaworks.algashop.ordering.domain.model.order.*;
+import com.algaworks.algashop.ordering.domain.model.customer.CustomerId;
 
 import java.time.LocalDate;
 
