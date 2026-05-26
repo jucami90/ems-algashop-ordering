@@ -2,8 +2,10 @@ package com.algaworks.algashop.ordering.infrastructure.persistence.order;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.domain.AbstractAggregateRoot;
 
 import java.math.BigDecimal;
+import java.util.Collection;
 import java.util.UUID;
 
 @Entity
@@ -14,7 +16,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class OrderItemPersistenceEntity {
+public class OrderItemPersistenceEntity  {
     @Id
     @EqualsAndHashCode.Include
     private Long id;
@@ -35,4 +37,5 @@ public class OrderItemPersistenceEntity {
 
         return getOrder().getId();
     }
+
 }
