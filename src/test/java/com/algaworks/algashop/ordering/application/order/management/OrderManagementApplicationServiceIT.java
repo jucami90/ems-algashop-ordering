@@ -1,5 +1,6 @@
 package com.algaworks.algashop.ordering.application.order.management;
 
+import com.algaworks.algashop.ordering.application.customer.loyaltypoints.CustomerLoyaltyPointsApplicationService;
 import com.algaworks.algashop.ordering.domain.model.customer.CustomerTestDataBuilder;
 import com.algaworks.algashop.ordering.domain.model.customer.Customers;
 import com.algaworks.algashop.ordering.domain.model.order.*;
@@ -14,6 +15,7 @@ import org.springframework.test.context.bean.override.mockito.MockitoSpyBean;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
+import java.util.UUID;
 
 @SpringBootTest
 @Transactional
@@ -33,6 +35,9 @@ class OrderManagementApplicationServiceIT {
 
     @MockitoSpyBean
     private OrderEventListener orderEventListener;
+
+    @MockitoSpyBean
+    private CustomerLoyaltyPointsApplicationService customerLoyaltyPointsApplicationService;
 
     @BeforeEach
     public void setup() {
@@ -88,6 +93,8 @@ class OrderManagementApplicationServiceIT {
 
         Mockito.verify(orderEventListener, Mockito.times(1))
                 .listen(Mockito.any(OrderPaidEvent.class));
+        Mockito.verify(orderEventListener, Mockito.times(1))
+                .listen(Mockito.any(OrderPaidEvent.class));
     }
 
     @Test
@@ -128,8 +135,13 @@ class OrderManagementApplicationServiceIT {
         Assertions.assertThat(updatedOrder.get().status()).isEqualTo(OrderStatus.READY);
         Assertions.assertThat(updatedOrder.get().readyAt()).isNotNull();
 
-        Mockito.verify(orderEventListener, Mockito.times(1))
+        Mockito.verify(orderEventListener)
                 .listen(Mockito.any(OrderReadyEvent.class));
+        Mockito.verify(customerLoyaltyPointsApplicationService)
+                .addLoyaltyPoints(
+                        Mockito.any(UUID.class),
+                        Mockito.any(String.class)
+                );
     }
 
     @Test

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CustomerEventListenerIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CustomerEventListenerIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.algaworks.algashop.ordering.infrastructure.listener.customer.html">com.algaworks.algashop.ordering.infrastructure.listener.customer</a> &gt; CustomerEventListenerIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.024s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldListenCustomerRegisteredEvent()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldListenOrderReadyEvent()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+11:44:40.507 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT]: CustomerEventListenerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:44:40.575 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.11)
+
+2026-05-26T11:44:40.733-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : Starting CustomerEventListenerIT using Java 21.0.8 with PID 22638 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
+2026-05-26T11:44:40.734-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : The following 1 profile is active: &quot;test&quot;
+2026-05-26T11:44:41.100-03:00  INFO 22638 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T11:44:41.150-03:00  INFO 22638 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2026-05-26T11:44:41.514-03:00  INFO 22638 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-26T11:44:41.531-03:00  INFO 22638 --- [ordering] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-26T11:44:41.541-03:00  INFO 22638 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-26T11:44:41.583-03:00  INFO 22638 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T11:44:41.594-03:00  INFO 22638 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-26T11:44:41.660-03:00  INFO 22638 --- [ordering] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ordering-test user=SA
+2026-05-26T11:44:41.660-03:00  INFO 22638 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-26T11:44:41.670-03:00  WARN 22638 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T11:44:41.679-03:00  INFO 22638 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T11:44:42.001-03:00  INFO 22638 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table &quot;customer&quot; (id uuid not null, address_city varchar(255), address_complement varchar(255), address_neighborhood varchar(255), address_number varchar(255), address_state varchar(255), address_street varchar(255), address_zip_code varchar(255), archived boolean, archived_at timestamp(6) with time zone, birth_date date, created_by_user_id uuid, document varchar(255), email varchar(255), first_name varchar(255), last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, last_name varchar(255), loyalty_points integer, phone varchar(255), promotion_notifications_allowed boolean, registered_at timestamp(6) with time zone, version bigint, primary key (id))
+Hibernate: create table &quot;order&quot; (id bigint not null, billing_address_city varchar(255), billing_address_complement varchar(255), billing_address_neighborhood varchar(255), billing_address_number varchar(255), billing_address_state varchar(255), billing_address_street varchar(255), billing_address_zip_code varchar(255), billing_document varchar(255), billing_first_name varchar(255), billing_last_name varchar(255), billing_phone varchar(255), canceled_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, paid_at timestamp(6) with time zone, payment_method varchar(255), placed_at timestamp(6) with time zone, ready_at timestamp(6) with time zone, shipping_address_city varchar(255), shipping_address_complement varchar(255), shipping_address_neighborhood varchar(255), shipping_address_number varchar(255), shipping_address_state varchar(255), shipping_address_street varchar(255), shipping_address_zip_code varchar(255), shipping_cost numeric(38,2), shipping_expected_date date, shipping_recipient_document varchar(255), shipping_recipient_first_name varchar(255), shipping_recipient_last_name varchar(255), shipping_recipient_phone varchar(255), status varchar(255), total_amount numeric(38,2), total_items integer, version bigint, &quot;customer_id&quot; uuid not null, primary key (id))
+Hibernate: create table order_item (id bigint not null, price numeric(38,2), product_id uuid, product_name varchar(255), quantity integer, total_amount numeric(38,2), &quot;order_id&quot; bigint not null, primary key (id))
+Hibernate: create table &quot;shopping_cart&quot; (id uuid not null, created_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, total_amount numeric(38,2), total_items integer, version bigint, &quot;customer_id&quot; uuid not null, primary key (id))
+Hibernate: create table shopping_cart_item (id uuid not null, available boolean, created_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, name varchar(255), price numeric(38,2), product_id uuid, quantity integer, total_amount numeric(38,2), version bigint, &quot;shopping_cart_id&quot; uuid not null, primary key (id))
+Hibernate: alter table if exists &quot;order&quot; add constraint FKk1m6gjs4m7rtgb5lw01g35yca foreign key (&quot;customer_id&quot;) references &quot;customer&quot;
+Hibernate: alter table if exists order_item add constraint FKsgmrolp8skulmo2vyb20c4mfk foreign key (&quot;order_id&quot;) references &quot;order&quot;
+Hibernate: alter table if exists &quot;shopping_cart&quot; add constraint FK4mr2cgajvrb6bxssj4epf56v9 foreign key (&quot;customer_id&quot;) references &quot;customer&quot;
+Hibernate: alter table if exists shopping_cart_item add constraint FKsqefhxject71i5aea80s5vui9 foreign key (&quot;shopping_cart_id&quot;) references &quot;shopping_cart&quot;
+2026-05-26T11:44:42.025-03:00  INFO 22638 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T11:44:42.234-03:00  INFO 22638 --- [ordering] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-26T11:44:42.823-03:00  WARN 22638 --- [ordering] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T11:44:42.896-03:00  INFO 22638 --- [ordering] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ordering-test'
+2026-05-26T11:44:42.919-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : Started CustomerEventListenerIT in 2.293 seconds (process running for 2.746)
+2026-05-26T11:44:42.940-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T11:44:42.941-03:00  INFO 22638 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T11:44:42.941-03:00  INFO 22638 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account john.doe@email.com
+2026-05-26T11:44:42.950-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.order.OrderEventListener     : CustomerRegisteredEvent listen ReadyEvent
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 26, 2026, 11:44:43 AM</p>
+</div>
+</div>
+</body>
+</html>
