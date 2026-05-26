@@ -22,7 +22,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @ToString(of = "id")
 @Table(name = "\"order\"")
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = false)
 @EntityListeners(AuditingEntityListener.class)
 public class OrderPersistenceEntity
 extends AbstractAggregateRoot<OrderPersistenceEntity> {

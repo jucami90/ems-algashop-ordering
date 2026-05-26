@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-05-26T14:44:42.926Z" hostname="192.168.0.54" time="0.025">
+<testsuite name="com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-05-26T15:53:21.529Z" hostname="192.168.0.54" time="0.003">
   <properties/>
-  <testcase name="shouldListenCustomerRegisteredEvent()" classname="com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT" time="0.021"/>
-  <testcase name="shouldListenOrderReadyEvent()" classname="com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT" time="0.003"/>
-  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
-11:44:40.507 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT]: CustomerEventListenerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:44:40.575 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT
+  <testcase name="shouldListenCustomerRegisteredEvent()" classname="com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT" time="0.002"/>
+  <testcase name="shouldListenOrderReadyEvent()" classname="com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT" time="0.001"/>
+  <system-out><![CDATA[2026-05-26T12:53:21.329-03:00  INFO 24128 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT]: CustomerEventListenerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-26T12:53:21.343-03:00  INFO 24128 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.infrastructure.listener.customer.CustomerEventListenerIT
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -16,45 +15,34 @@
 
  :: Spring Boot ::               (v3.5.11)
 
-2026-05-26T11:44:40.733-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : Starting CustomerEventListenerIT using Java 21.0.8 with PID 22638 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
-2026-05-26T11:44:40.734-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : The following 1 profile is active: "test"
-2026-05-26T11:44:41.100-03:00  INFO 22638 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-26T11:44:41.150-03:00  INFO 22638 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
-2026-05-26T11:44:41.514-03:00  INFO 22638 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-26T11:44:41.531-03:00  INFO 22638 --- [ordering] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-26T11:44:41.541-03:00  INFO 22638 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-26T11:44:41.583-03:00  INFO 22638 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-26T11:44:41.594-03:00  INFO 22638 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-26T11:44:41.660-03:00  INFO 22638 --- [ordering] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ordering-test user=SA
-2026-05-26T11:44:41.660-03:00  INFO 22638 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-26T11:44:41.670-03:00  WARN 22638 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-26T11:44:41.679-03:00  INFO 22638 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+2026-05-26T12:53:21.349-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : Starting CustomerEventListenerIT using Java 21.0.8 with PID 24128 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
+2026-05-26T12:53:21.349-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : The following 1 profile is active: "test"
+2026-05-26T12:53:21.421-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T12:53:21.435-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2026-05-26T12:53:21.456-03:00  INFO 24128 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-26T12:53:21.456-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-26T12:53:21.458-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T12:53:21.459-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-05-26T12:53:21.459-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn91: url=jdbc:h2:mem:ordering-test user=SA
+2026-05-26T12:53:21.459-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-05-26T12:53:21.459-03:00  WARN 24128 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T12:53:21.459-03:00  INFO 24128 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-26T11:44:42.001-03:00  INFO 22638 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-Hibernate: create table "customer" (id uuid not null, address_city varchar(255), address_complement varchar(255), address_neighborhood varchar(255), address_number varchar(255), address_state varchar(255), address_street varchar(255), address_zip_code varchar(255), archived boolean, archived_at timestamp(6) with time zone, birth_date date, created_by_user_id uuid, document varchar(255), email varchar(255), first_name varchar(255), last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, last_name varchar(255), loyalty_points integer, phone varchar(255), promotion_notifications_allowed boolean, registered_at timestamp(6) with time zone, version bigint, primary key (id))
-Hibernate: create table "order" (id bigint not null, billing_address_city varchar(255), billing_address_complement varchar(255), billing_address_neighborhood varchar(255), billing_address_number varchar(255), billing_address_state varchar(255), billing_address_street varchar(255), billing_address_zip_code varchar(255), billing_document varchar(255), billing_first_name varchar(255), billing_last_name varchar(255), billing_phone varchar(255), canceled_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, paid_at timestamp(6) with time zone, payment_method varchar(255), placed_at timestamp(6) with time zone, ready_at timestamp(6) with time zone, shipping_address_city varchar(255), shipping_address_complement varchar(255), shipping_address_neighborhood varchar(255), shipping_address_number varchar(255), shipping_address_state varchar(255), shipping_address_street varchar(255), shipping_address_zip_code varchar(255), shipping_cost numeric(38,2), shipping_expected_date date, shipping_recipient_document varchar(255), shipping_recipient_first_name varchar(255), shipping_recipient_last_name varchar(255), shipping_recipient_phone varchar(255), status varchar(255), total_amount numeric(38,2), total_items integer, version bigint, "customer_id" uuid not null, primary key (id))
-Hibernate: create table order_item (id bigint not null, price numeric(38,2), product_id uuid, product_name varchar(255), quantity integer, total_amount numeric(38,2), "order_id" bigint not null, primary key (id))
-Hibernate: create table "shopping_cart" (id uuid not null, created_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, total_amount numeric(38,2), total_items integer, version bigint, "customer_id" uuid not null, primary key (id))
-Hibernate: create table shopping_cart_item (id uuid not null, available boolean, created_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, name varchar(255), price numeric(38,2), product_id uuid, quantity integer, total_amount numeric(38,2), version bigint, "shopping_cart_id" uuid not null, primary key (id))
-Hibernate: alter table if exists "order" add constraint FKk1m6gjs4m7rtgb5lw01g35yca foreign key ("customer_id") references "customer"
-Hibernate: alter table if exists order_item add constraint FKsgmrolp8skulmo2vyb20c4mfk foreign key ("order_id") references "order"
-Hibernate: alter table if exists "shopping_cart" add constraint FK4mr2cgajvrb6bxssj4epf56v9 foreign key ("customer_id") references "customer"
-Hibernate: alter table if exists shopping_cart_item add constraint FKsqefhxject71i5aea80s5vui9 foreign key ("shopping_cart_id") references "shopping_cart"
-2026-05-26T11:44:42.025-03:00  INFO 22638 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-26T11:44:42.234-03:00  INFO 22638 --- [ordering] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-26T11:44:42.823-03:00  WARN 22638 --- [ordering] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-26T11:44:42.896-03:00  INFO 22638 --- [ordering] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ordering-test'
-2026-05-26T11:44:42.919-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : Started CustomerEventListenerIT in 2.293 seconds (process running for 2.746)
-2026-05-26T11:44:42.940-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T11:44:42.941-03:00  INFO 22638 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T11:44:42.941-03:00  INFO 22638 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account john.doe@email.com
-2026-05-26T11:44:42.950-03:00  INFO 22638 --- [ordering] [    Test worker] c.a.a.o.i.l.order.OrderEventListener     : CustomerRegisteredEvent listen ReadyEvent
+2026-05-26T12:53:21.476-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T12:53:21.477-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T12:53:21.519-03:00  WARN 24128 --- [ordering] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T12:53:21.526-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ordering-test'
+2026-05-26T12:53:21.529-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListenerIT    : Started CustomerEventListenerIT in 0.185 seconds (process running for 5.21)
+2026-05-26T12:53:21.531-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T12:53:21.531-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T12:53:21.531-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account john.doe@email.com
+2026-05-26T12:53:21.533-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.order.OrderEventListener     : CustomerRegisteredEvent listen ReadyEvent
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

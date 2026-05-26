@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-05-26T15:53:20.019Z" hostname="192.168.0.54" time="0.044">
+  <properties/>
+  <testcase name="shouldRegister()" classname="com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT" time="0.021"/>
+  <testcase name="shouldUpdate()" classname="com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT" time="0.007"/>
+  <testcase name="shouldThrowCustomerArchivedExceptionWhenArchivingAlreadyArchivedCustomer()" classname="com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT" time="0.006"/>
+  <testcase name="shouldArchiveCustomer()" classname="com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT" time="0.006"/>
+  <testcase name="shouldThrowCustomerNotFoundExceptionWhenArchivingNonExistingCustomer()" classname="com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT" time="0.002"/>
+  <system-out><![CDATA[2026-05-26T12:53:19.762-03:00  INFO 24128 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT]: CustomerManagementApplicationServiceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-26T12:53:19.779-03:00  INFO 24128 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.application.customer.management.CustomerManagementApplicationServiceIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.11)
+
+2026-05-26T12:53:19.788-03:00  INFO 24128 --- [ordering] [    Test worker] m.CustomerManagementApplicationServiceIT : Starting CustomerManagementApplicationServiceIT using Java 21.0.8 with PID 24128 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
+2026-05-26T12:53:19.788-03:00  INFO 24128 --- [ordering] [    Test worker] m.CustomerManagementApplicationServiceIT : The following 1 profile is active: "test"
+2026-05-26T12:53:19.865-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T12:53:19.879-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2026-05-26T12:53:19.905-03:00  INFO 24128 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-26T12:53:19.906-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-26T12:53:19.908-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T12:53:19.908-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-05-26T12:53:19.909-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn27: url=jdbc:h2:mem:ordering-test user=SA
+2026-05-26T12:53:19.909-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-05-26T12:53:19.909-03:00  WARN 24128 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T12:53:19.909-03:00  INFO 24128 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T12:53:19.928-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T12:53:19.930-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T12:53:20.005-03:00  WARN 24128 --- [ordering] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T12:53:20.015-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ordering-test'
+2026-05-26T12:53:20.019-03:00  INFO 24128 --- [ordering] [    Test worker] m.CustomerManagementApplicationServiceIT : Started CustomerManagementApplicationServiceIT in 0.239 seconds (process running for 3.699)
+Hibernate: select cpe1_0.id from "customer" cpe1_0 where cpe1_0.email=? and cpe1_0.id<>? fetch first ? rows only
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+Hibernate: insert into "customer" (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2026-05-26T12:53:20.032-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T12:53:20.032-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T12:53:20.032-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+Hibernate: select cpe1_0.id from "customer" cpe1_0 where cpe1_0.email=? and cpe1_0.id<>? fetch first ? rows only
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+Hibernate: insert into "customer" (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2026-05-26T12:53:20.044-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T12:53:20.044-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T12:53:20.044-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+Hibernate: update "customer" set address_city=?,address_complement=?,address_neighborhood=?,address_number=?,address_state=?,address_street=?,address_zip_code=?,archived=?,archived_at=?,birth_date=?,created_by_user_id=?,document=?,email=?,first_name=?,last_modified_at=?,last_modified_by_user_id=?,last_name=?,loyalty_points=?,phone=?,promotion_notifications_allowed=?,registered_at=?,version=? where id=? and version=?
+Hibernate: select cpe1_0.id from "customer" cpe1_0 where cpe1_0.email=? and cpe1_0.id<>? fetch first ? rows only
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+Hibernate: insert into "customer" (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2026-05-26T12:53:20.051-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T12:53:20.052-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T12:53:20.052-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+Hibernate: update "customer" set address_city=?,address_complement=?,address_neighborhood=?,address_number=?,address_state=?,address_street=?,address_zip_code=?,archived=?,archived_at=?,birth_date=?,created_by_user_id=?,document=?,email=?,first_name=?,last_modified_at=?,last_modified_by_user_id=?,last_name=?,loyalty_points=?,phone=?,promotion_notifications_allowed=?,registered_at=?,version=? where id=? and version=?
+2026-05-26T12:53:20.053-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerArchivedEvent listen 1
+Hibernate: select cpe1_0.id from "customer" cpe1_0 where cpe1_0.email=? and cpe1_0.id<>? fetch first ? rows only
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+Hibernate: insert into "customer" (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2026-05-26T12:53:20.058-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T12:53:20.058-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T12:53:20.058-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+Hibernate: update "customer" set address_city=?,address_complement=?,address_neighborhood=?,address_number=?,address_state=?,address_street=?,address_zip_code=?,archived=?,archived_at=?,birth_date=?,created_by_user_id=?,document=?,email=?,first_name=?,last_modified_at=?,last_modified_by_user_id=?,last_name=?,loyalty_points=?,phone=?,promotion_notifications_allowed=?,registered_at=?,version=? where id=? and version=?
+2026-05-26T12:53:20.060-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerArchivedEvent listen 1
+Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
