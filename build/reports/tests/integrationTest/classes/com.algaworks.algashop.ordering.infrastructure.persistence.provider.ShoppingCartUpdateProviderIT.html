@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.027s</div>
+<div class="counter">0.025s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">shouldUpdateItemAvailability()</td>
-<td class="success">0.010s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldUpdateItemPriceAndTotalAmount()</td>
-<td class="success">0.017s</td>
+<td class="success">0.016s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,8 +92,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2026-05-26T12:53:21.693-03:00  INFO 24128 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.infrastructure.persistence.provider.ShoppingCartUpdateProviderIT]: ShoppingCartUpdateProviderIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-05-26T12:53:21.694-03:00  INFO 24128 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.infrastructure.persistence.provider.ShoppingCartUpdateProviderIT
+<pre>2026-05-26T15:06:42.082-03:00  INFO 25870 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.infrastructure.persistence.provider.ShoppingCartUpdateProviderIT]: ShoppingCartUpdateProviderIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-26T15:06:42.083-03:00  INFO 25870 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.infrastructure.persistence.provider.ShoppingCartUpdateProviderIT
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -104,25 +104,25 @@
 
  :: Spring Boot ::               (v3.5.11)
 
-2026-05-26T12:53:21.700-03:00  INFO 24128 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Starting ShoppingCartUpdateProviderIT using Java 21.0.8 with PID 24128 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
-2026-05-26T12:53:21.700-03:00  INFO 24128 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : The following 1 profile is active: &quot;test&quot;
-2026-05-26T12:53:21.757-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-26T12:53:21.770-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
-2026-05-26T12:53:21.772-03:00  INFO 24128 --- [ordering] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2026-05-26T12:53:21.774-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:0c87ff00-348f-4c25-9ae5-e67851ab72c6;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2026-05-26T12:53:21.782-03:00  INFO 24128 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-26T12:53:21.783-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-26T12:53:21.785-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-26T12:53:21.785-03:00  WARN 24128 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-26T12:53:21.785-03:00  INFO 24128 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@55690a38']
+2026-05-26T15:06:42.090-03:00  INFO 25870 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Starting ShoppingCartUpdateProviderIT using Java 21.0.8 with PID 25870 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
+2026-05-26T15:06:42.090-03:00  INFO 25870 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : The following 1 profile is active: &quot;test&quot;
+2026-05-26T15:06:42.150-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T15:06:42.171-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2026-05-26T15:06:42.175-03:00  INFO 25870 --- [ordering] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-05-26T15:06:42.177-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:65af50fd-df3a-4d1e-bd5a-c38eadfe445d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-05-26T15:06:42.186-03:00  INFO 25870 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-26T15:06:42.186-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-26T15:06:42.188-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T15:06:42.189-03:00  WARN 25870 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T15:06:42.189-03:00  INFO 25870 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@57e6d476']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-26T12:53:21.797-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T15:06:42.203-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: create table &quot;customer&quot; (id uuid not null, address_city varchar(255), address_complement varchar(255), address_neighborhood varchar(255), address_number varchar(255), address_state varchar(255), address_street varchar(255), address_zip_code varchar(255), archived boolean, archived_at timestamp(6) with time zone, birth_date date, created_by_user_id uuid, document varchar(255), email varchar(255), first_name varchar(255), last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, last_name varchar(255), loyalty_points integer, phone varchar(255), promotion_notifications_allowed boolean, registered_at timestamp(6) with time zone, version bigint, primary key (id))
 Hibernate: create table &quot;order&quot; (id bigint not null, billing_address_city varchar(255), billing_address_complement varchar(255), billing_address_neighborhood varchar(255), billing_address_number varchar(255), billing_address_state varchar(255), billing_address_street varchar(255), billing_address_zip_code varchar(255), billing_document varchar(255), billing_first_name varchar(255), billing_last_name varchar(255), billing_phone varchar(255), canceled_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, paid_at timestamp(6) with time zone, payment_method varchar(255), placed_at timestamp(6) with time zone, ready_at timestamp(6) with time zone, shipping_address_city varchar(255), shipping_address_complement varchar(255), shipping_address_neighborhood varchar(255), shipping_address_number varchar(255), shipping_address_state varchar(255), shipping_address_street varchar(255), shipping_address_zip_code varchar(255), shipping_cost numeric(38,2), shipping_expected_date date, shipping_recipient_document varchar(255), shipping_recipient_first_name varchar(255), shipping_recipient_last_name varchar(255), shipping_recipient_phone varchar(255), status varchar(255), total_amount numeric(38,2), total_items integer, version bigint, &quot;customer_id&quot; uuid not null, primary key (id))
 Hibernate: create table order_item (id bigint not null, price numeric(38,2), product_id uuid, product_name varchar(255), quantity integer, total_amount numeric(38,2), &quot;order_id&quot; bigint not null, primary key (id))
@@ -132,8 +132,8 @@ Hibernate: alter table if exists &quot;order&quot; add constraint FKk1m6gjs4m7rt
 Hibernate: alter table if exists order_item add constraint FKsgmrolp8skulmo2vyb20c4mfk foreign key (&quot;order_id&quot;) references &quot;order&quot;
 Hibernate: alter table if exists &quot;shopping_cart&quot; add constraint FK4mr2cgajvrb6bxssj4epf56v9 foreign key (&quot;customer_id&quot;) references &quot;customer&quot;
 Hibernate: alter table if exists shopping_cart_item add constraint FKsqefhxject71i5aea80s5vui9 foreign key (&quot;shopping_cart_id&quot;) references &quot;shopping_cart&quot;
-2026-05-26T12:53:21.800-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-26T12:53:21.814-03:00  INFO 24128 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Started ShoppingCartUpdateProviderIT in 0.119 seconds (process running for 5.495)
+2026-05-26T15:06:42.207-03:00  INFO 25870 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T15:06:42.224-03:00  INFO 25870 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Started ShoppingCartUpdateProviderIT in 0.14 seconds (process running for 5.591)
 Hibernate: select count(*) from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
@@ -145,7 +145,7 @@ Hibernate: update shopping_cart_item scipe1_0 set price=?,total_amount=(cast(? a
 Hibernate: update &quot;shopping_cart&quot; scpe1_0 set total_amount=(select sum(scipe1_0.total_amount) from shopping_cart_item scipe1_0 where scipe1_0.&quot;shopping_cart_id&quot;=scpe1_0.id) where exists(select 1 from shopping_cart_item scipe2_0 where scipe2_0.&quot;shopping_cart_id&quot;=scpe1_0.id and scipe2_0.product_id=?)
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: select i1_0.&quot;shopping_cart_id&quot;,i1_0.id,i1_0.available,i1_0.created_at,i1_0.created_by_user_id,i1_0.last_modified_at,i1_0.last_modified_by_user_id,i1_0.name,i1_0.price,i1_0.product_id,i1_0.quantity,i1_0.total_amount,i1_0.version from shopping_cart_item i1_0 where i1_0.&quot;shopping_cart_id&quot;=?
-2026-05-26T12:53:21.830-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T15:06:42.240-03:00  INFO 25870 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -156,25 +156,25 @@ Hibernate: select i1_0.&quot;shopping_cart_id&quot;,i1_0.id,i1_0.available,i1_0.
 
  :: Spring Boot ::               (v3.5.11)
 
-2026-05-26T12:53:21.838-03:00  INFO 24128 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Starting ShoppingCartUpdateProviderIT using Java 21.0.8 with PID 24128 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
-2026-05-26T12:53:21.838-03:00  INFO 24128 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : The following 1 profile is active: &quot;test&quot;
-2026-05-26T12:53:21.894-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-26T12:53:21.908-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
-2026-05-26T12:53:21.909-03:00  INFO 24128 --- [ordering] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2026-05-26T12:53:21.911-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:6c707eed-3fa0-49b8-a87b-c16fac6f3053;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2026-05-26T12:53:21.918-03:00  INFO 24128 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-26T12:53:21.919-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-26T12:53:21.921-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-26T12:53:21.922-03:00  WARN 24128 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-26T12:53:21.922-03:00  INFO 24128 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@44973096']
+2026-05-26T15:06:42.248-03:00  INFO 25870 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Starting ShoppingCartUpdateProviderIT using Java 21.0.8 with PID 25870 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
+2026-05-26T15:06:42.248-03:00  INFO 25870 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : The following 1 profile is active: &quot;test&quot;
+2026-05-26T15:06:42.308-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T15:06:42.321-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2026-05-26T15:06:42.323-03:00  INFO 25870 --- [ordering] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-05-26T15:06:42.325-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:0189c14d-beb8-4219-a5c2-1306c72adf48;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-05-26T15:06:42.332-03:00  INFO 25870 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-26T15:06:42.333-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-26T15:06:42.335-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T15:06:42.336-03:00  WARN 25870 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T15:06:42.336-03:00  INFO 25870 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@69a7866b']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-26T12:53:21.935-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T15:06:42.350-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: create table &quot;customer&quot; (id uuid not null, address_city varchar(255), address_complement varchar(255), address_neighborhood varchar(255), address_number varchar(255), address_state varchar(255), address_street varchar(255), address_zip_code varchar(255), archived boolean, archived_at timestamp(6) with time zone, birth_date date, created_by_user_id uuid, document varchar(255), email varchar(255), first_name varchar(255), last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, last_name varchar(255), loyalty_points integer, phone varchar(255), promotion_notifications_allowed boolean, registered_at timestamp(6) with time zone, version bigint, primary key (id))
 Hibernate: create table &quot;order&quot; (id bigint not null, billing_address_city varchar(255), billing_address_complement varchar(255), billing_address_neighborhood varchar(255), billing_address_number varchar(255), billing_address_state varchar(255), billing_address_street varchar(255), billing_address_zip_code varchar(255), billing_document varchar(255), billing_first_name varchar(255), billing_last_name varchar(255), billing_phone varchar(255), canceled_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, paid_at timestamp(6) with time zone, payment_method varchar(255), placed_at timestamp(6) with time zone, ready_at timestamp(6) with time zone, shipping_address_city varchar(255), shipping_address_complement varchar(255), shipping_address_neighborhood varchar(255), shipping_address_number varchar(255), shipping_address_state varchar(255), shipping_address_street varchar(255), shipping_address_zip_code varchar(255), shipping_cost numeric(38,2), shipping_expected_date date, shipping_recipient_document varchar(255), shipping_recipient_first_name varchar(255), shipping_recipient_last_name varchar(255), shipping_recipient_phone varchar(255), status varchar(255), total_amount numeric(38,2), total_items integer, version bigint, &quot;customer_id&quot; uuid not null, primary key (id))
 Hibernate: create table order_item (id bigint not null, price numeric(38,2), product_id uuid, product_name varchar(255), quantity integer, total_amount numeric(38,2), &quot;order_id&quot; bigint not null, primary key (id))
@@ -184,8 +184,8 @@ Hibernate: alter table if exists &quot;order&quot; add constraint FKk1m6gjs4m7rt
 Hibernate: alter table if exists order_item add constraint FKsgmrolp8skulmo2vyb20c4mfk foreign key (&quot;order_id&quot;) references &quot;order&quot;
 Hibernate: alter table if exists &quot;shopping_cart&quot; add constraint FK4mr2cgajvrb6bxssj4epf56v9 foreign key (&quot;customer_id&quot;) references &quot;customer&quot;
 Hibernate: alter table if exists shopping_cart_item add constraint FKsqefhxject71i5aea80s5vui9 foreign key (&quot;shopping_cart_id&quot;) references &quot;shopping_cart&quot;
-2026-05-26T12:53:21.939-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-26T12:53:21.957-03:00  INFO 24128 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Started ShoppingCartUpdateProviderIT in 0.125 seconds (process running for 5.637)
+2026-05-26T15:06:42.352-03:00  INFO 25870 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T15:06:42.367-03:00  INFO 25870 --- [ordering] [    Test worker] a.a.o.i.p.p.ShoppingCartUpdateProviderIT : Started ShoppingCartUpdateProviderIT in 0.124 seconds (process running for 5.734)
 Hibernate: select count(*) from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
@@ -196,7 +196,7 @@ Hibernate: insert into shopping_cart_item (available,created_at,created_by_user_
 Hibernate: update shopping_cart_item scipe1_0 set available=? where scipe1_0.product_id=?
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: select i1_0.&quot;shopping_cart_id&quot;,i1_0.id,i1_0.available,i1_0.created_at,i1_0.created_by_user_id,i1_0.last_modified_at,i1_0.last_modified_by_user_id,i1_0.name,i1_0.price,i1_0.product_id,i1_0.quantity,i1_0.total_amount,i1_0.version from shopping_cart_item i1_0 where i1_0.&quot;shopping_cart_id&quot;=?
-2026-05-26T12:53:21.967-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T15:06:42.376-03:00  INFO 25870 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 </pre>
 </span>
 </div>
@@ -208,7 +208,7 @@ Hibernate: select i1_0.&quot;shopping_cart_id&quot;,i1_0.id,i1_0.available,i1_0.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 26, 2026, 12:53:22 PM</p>
+<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 26, 2026, 3:06:43 PM</p>
 </div>
 </div>
 </body>

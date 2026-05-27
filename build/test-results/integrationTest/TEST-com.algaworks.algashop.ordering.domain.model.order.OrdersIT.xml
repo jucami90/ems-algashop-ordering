@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-05-26T15:53:21.250Z" hostname="192.168.0.54" time="0.077">
+<testsuite name="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-05-26T18:06:41.654Z" hostname="192.168.0.54" time="0.067">
   <properties/>
-  <testcase name="shouldReturnSalesQuantityByCustomer()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.026"/>
-  <testcase name="shouldNotAllowStaleUpdates()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.008"/>
+  <testcase name="shouldReturnSalesQuantityByCustomer()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.017"/>
+  <testcase name="shouldNotAllowStaleUpdates()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.006"/>
   <testcase name="shouldPersistAndFind()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.005"/>
   <testcase name="shouldReturnIfOrderExists()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.005"/>
   <testcase name="shouldUpdateExistingOrder()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.005"/>
-  <testcase name="shouldListExistingOrdersByYear()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.011"/>
+  <testcase name="shouldListExistingOrdersByYear()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.01"/>
   <testcase name="shouldReturnTotalSoldByCustomer()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.01"/>
-  <testcase name="shouldCountExistingOrders()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.005"/>
-  <system-out><![CDATA[2026-05-26T12:53:21.097-03:00  INFO 24128 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.domain.model.order.OrdersIT]: OrdersIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-05-26T12:53:21.122-03:00  INFO 24128 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.domain.model.order.OrdersIT
+  <testcase name="shouldCountExistingOrders()" classname="com.algaworks.algashop.ordering.domain.model.order.OrdersIT" time="0.006"/>
+  <system-out><![CDATA[2026-05-26T15:06:41.510-03:00  INFO 25870 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.domain.model.order.OrdersIT]: OrdersIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-26T15:06:41.536-03:00  INFO 25870 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.domain.model.order.OrdersIT
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -21,25 +21,25 @@
 
  :: Spring Boot ::               (v3.5.11)
 
-2026-05-26T12:53:21.129-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.domain.model.order.OrdersIT      : Starting OrdersIT using Java 21.0.8 with PID 24128 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
-2026-05-26T12:53:21.129-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.domain.model.order.OrdersIT      : The following 1 profile is active: "test"
-2026-05-26T12:53:21.181-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-26T12:53:21.195-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
-2026-05-26T12:53:21.197-03:00  INFO 24128 --- [ordering] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2026-05-26T12:53:21.199-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:c3c459a5-b785-4ba8-a7ff-a5b8352ff14a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2026-05-26T12:53:21.207-03:00  INFO 24128 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-26T12:53:21.207-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-26T12:53:21.209-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-26T12:53:21.210-03:00  WARN 24128 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-26T12:53:21.210-03:00  INFO 24128 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@32c433cd']
+2026-05-26T15:06:41.542-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.domain.model.order.OrdersIT      : Starting OrdersIT using Java 21.0.8 with PID 25870 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
+2026-05-26T15:06:41.543-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.domain.model.order.OrdersIT      : The following 1 profile is active: "test"
+2026-05-26T15:06:41.591-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T15:06:41.604-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2026-05-26T15:06:41.606-03:00  INFO 25870 --- [ordering] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-05-26T15:06:41.608-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d34a6524-80ed-402a-bd38-12c596d57051;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-05-26T15:06:41.615-03:00  INFO 25870 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-26T15:06:41.616-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-26T15:06:41.618-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T15:06:41.618-03:00  WARN 25870 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T15:06:41.618-03:00  INFO 25870 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@21150c50']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-26T12:53:21.226-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T15:06:41.634-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: create table "customer" (id uuid not null, address_city varchar(255), address_complement varchar(255), address_neighborhood varchar(255), address_number varchar(255), address_state varchar(255), address_street varchar(255), address_zip_code varchar(255), archived boolean, archived_at timestamp(6) with time zone, birth_date date, created_by_user_id uuid, document varchar(255), email varchar(255), first_name varchar(255), last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, last_name varchar(255), loyalty_points integer, phone varchar(255), promotion_notifications_allowed boolean, registered_at timestamp(6) with time zone, version bigint, primary key (id))
 Hibernate: create table "order" (id bigint not null, billing_address_city varchar(255), billing_address_complement varchar(255), billing_address_neighborhood varchar(255), billing_address_number varchar(255), billing_address_state varchar(255), billing_address_street varchar(255), billing_address_zip_code varchar(255), billing_document varchar(255), billing_first_name varchar(255), billing_last_name varchar(255), billing_phone varchar(255), canceled_at timestamp(6) with time zone, created_by_user_id uuid, last_modified_at timestamp(6) with time zone, last_modified_by_user_id uuid, paid_at timestamp(6) with time zone, payment_method varchar(255), placed_at timestamp(6) with time zone, ready_at timestamp(6) with time zone, shipping_address_city varchar(255), shipping_address_complement varchar(255), shipping_address_neighborhood varchar(255), shipping_address_number varchar(255), shipping_address_state varchar(255), shipping_address_street varchar(255), shipping_address_zip_code varchar(255), shipping_cost numeric(38,2), shipping_expected_date date, shipping_recipient_document varchar(255), shipping_recipient_first_name varchar(255), shipping_recipient_last_name varchar(255), shipping_recipient_phone varchar(255), status varchar(255), total_amount numeric(38,2), total_items integer, version bigint, "customer_id" uuid not null, primary key (id))
 Hibernate: create table order_item (id bigint not null, price numeric(38,2), product_id uuid, product_name varchar(255), quantity integer, total_amount numeric(38,2), "order_id" bigint not null, primary key (id))
@@ -49,8 +49,8 @@ Hibernate: alter table if exists "order" add constraint FKk1m6gjs4m7rtgb5lw01g35
 Hibernate: alter table if exists order_item add constraint FKsgmrolp8skulmo2vyb20c4mfk foreign key ("order_id") references "order"
 Hibernate: alter table if exists "shopping_cart" add constraint FK4mr2cgajvrb6bxssj4epf56v9 foreign key ("customer_id") references "customer"
 Hibernate: alter table if exists shopping_cart_item add constraint FKsqefhxject71i5aea80s5vui9 foreign key ("shopping_cart_id") references "shopping_cart"
-2026-05-26T12:53:21.230-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-26T12:53:21.250-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.domain.model.order.OrdersIT      : Started OrdersIT in 0.127 seconds (process running for 4.931)
+2026-05-26T15:06:41.638-03:00  INFO 25870 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T15:06:41.653-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.domain.model.order.OrdersIT      : Started OrdersIT in 0.116 seconds (process running for 5.02)
 Hibernate: select count(*) from "customer" cpe1_0 where cpe1_0.id=?
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from "customer" cpe1_0 where cpe1_0.id=?
 Hibernate: insert into "customer" (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)

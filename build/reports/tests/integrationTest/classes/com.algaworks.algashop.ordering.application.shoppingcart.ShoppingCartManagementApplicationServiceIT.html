@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.068s</div>
+<div class="counter">0.067s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">shouldAddItemToShoppingCartSuccessfully()</td>
-<td class="success">0.010s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldCreateNewShoppingCartForExistingCustomer()</td>
-<td class="success">0.006s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,17 +94,17 @@
 </tr>
 <tr>
 <td class="success">shouldEmptyShoppingCartSuccessfully()</td>
-<td class="success">0.006s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldRemoveItemFromShoppingCartSuccessfully()</td>
-<td class="success">0.008s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldThrowCustomerAlreadyHaveShoppingCartExceptionWhenCreatingNewShoppingCartForCustomerWithExistingCart()</td>
-<td class="success">0.012s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -114,12 +114,12 @@
 </tr>
 <tr>
 <td class="success">shouldThrowProductNotFoundExceptionWhenAddingNonExistingProduct()</td>
-<td class="success">0.005s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldThrowProductOutOfStockExceptionWhenAddingOutOfStockProduct()</td>
-<td class="success">0.003s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@
 </tr>
 <tr>
 <td class="success">shouldThrowShoppingCartNotFoundExceptionWhenAddingItemToNonExistingShoppingCart()</td>
-<td class="success">0.002s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -139,12 +139,12 @@
 </tr>
 <tr>
 <td class="success">shouldThrowShoppingCartNotFoundExceptionWhenEmptyingNonExistingShoppingCart()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldThrowShoppingCartNotFoundExceptionWhenRemovingItemFromNonExistingShoppingCart()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -152,8 +152,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2026-05-26T12:53:20.389-03:00  INFO 24128 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.application.shoppingcart.ShoppingCartManagementApplicationServiceIT]: ShoppingCartManagementApplicationServiceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-05-26T12:53:20.401-03:00  INFO 24128 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.application.shoppingcart.ShoppingCartManagementApplicationServiceIT
+<pre>2026-05-26T15:06:40.812-03:00  INFO 25870 --- [ordering] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.algaworks.algashop.ordering.application.shoppingcart.ShoppingCartManagementApplicationServiceIT]: ShoppingCartManagementApplicationServiceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-26T15:06:40.823-03:00  INFO 25870 --- [ordering] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.algaworks.algashop.ordering.OrderingApplication for test class com.algaworks.algashop.ordering.application.shoppingcart.ShoppingCartManagementApplicationServiceIT
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -164,18 +164,18 @@
 
  :: Spring Boot ::               (v3.5.11)
 
-2026-05-26T12:53:20.408-03:00  INFO 24128 --- [ordering] [    Test worker] oppingCartManagementApplicationServiceIT : Starting ShoppingCartManagementApplicationServiceIT using Java 21.0.8 with PID 24128 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
-2026-05-26T12:53:20.408-03:00  INFO 24128 --- [ordering] [    Test worker] oppingCartManagementApplicationServiceIT : The following 1 profile is active: &quot;test&quot;
-2026-05-26T12:53:20.485-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-26T12:53:20.503-03:00  INFO 24128 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
-2026-05-26T12:53:20.525-03:00  INFO 24128 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-26T12:53:20.525-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-26T12:53:20.528-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-26T12:53:20.528-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2026-05-26T12:53:20.528-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn48: url=jdbc:h2:mem:ordering-test user=SA
-2026-05-26T12:53:20.528-03:00  INFO 24128 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2026-05-26T12:53:20.529-03:00  WARN 24128 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-05-26T12:53:20.529-03:00  INFO 24128 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-05-26T15:06:40.830-03:00  INFO 25870 --- [ordering] [    Test worker] oppingCartManagementApplicationServiceIT : Starting ShoppingCartManagementApplicationServiceIT using Java 21.0.8 with PID 25870 (started by jucami90 in /Users/jucami90/Documents/Curso Microservicios/EMS/algashop/microservices/ordering)
+2026-05-26T15:06:40.830-03:00  INFO 25870 --- [ordering] [    Test worker] oppingCartManagementApplicationServiceIT : The following 1 profile is active: &quot;test&quot;
+2026-05-26T15:06:40.906-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T15:06:40.925-03:00  INFO 25870 --- [ordering] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2026-05-26T15:06:40.947-03:00  INFO 25870 --- [ordering] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-26T15:06:40.948-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-26T15:06:40.950-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T15:06:40.951-03:00  INFO 25870 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-05-26T15:06:40.951-03:00  INFO 25870 --- [ordering] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn48: url=jdbc:h2:mem:ordering-test user=SA
+2026-05-26T15:06:40.951-03:00  INFO 25870 --- [ordering] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-05-26T15:06:40.951-03:00  WARN 25870 --- [ordering] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-26T15:06:40.951-03:00  INFO 25870 --- [ordering] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -183,105 +183,105 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-26T12:53:20.547-03:00  INFO 24128 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-26T12:53:20.549-03:00  INFO 24128 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-26T12:53:20.614-03:00  WARN 24128 --- [ordering] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-26T12:53:20.622-03:00  INFO 24128 --- [ordering] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ordering-test'
-2026-05-26T12:53:20.625-03:00  INFO 24128 --- [ordering] [    Test worker] oppingCartManagementApplicationServiceIT : Started ShoppingCartManagementApplicationServiceIT in 0.223 seconds (process running for 4.305)
+2026-05-26T15:06:40.970-03:00  INFO 25870 --- [ordering] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T15:06:40.972-03:00  INFO 25870 --- [ordering] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T15:06:41.037-03:00  WARN 25870 --- [ordering] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T15:06:41.045-03:00  INFO 25870 --- [ordering] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ordering-test'
+2026-05-26T15:06:41.049-03:00  INFO 25870 --- [ordering] [    Test worker] oppingCartManagementApplicationServiceIT : Started ShoppingCartManagementApplicationServiceIT in 0.225 seconds (process running for 4.416)
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.635-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.635-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.635-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.058-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.058-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.058-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.637-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.060-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
 Hibernate: select count(*) from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where c1_0.id=?
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.646-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.646-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.646-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.069-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.069-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.069-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
 Hibernate: insert into shopping_cart_item (available,created_at,created_by_user_id,last_modified_at,last_modified_by_user_id,name,price,product_id,quantity,&quot;shopping_cart_id&quot;,total_amount,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.648-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
-2026-05-26T12:53:20.648-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Added
+2026-05-26T15:06:41.071-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.071-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Added
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,i1_0.&quot;shopping_cart_id&quot;,i1_0.id,i1_0.available,i1_0.created_at,i1_0.created_by_user_id,i1_0.last_modified_at,i1_0.last_modified_by_user_id,i1_0.name,i1_0.price,i1_0.product_id,i1_0.quantity,i1_0.total_amount,i1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; left join shopping_cart_item i1_0 on scpe1_0.id=i1_0.&quot;shopping_cart_id&quot; where scpe1_0.id=?
 Hibernate: update &quot;shopping_cart&quot; set created_at=?,created_by_user_id=?,&quot;customer_id&quot;=?,last_modified_at=?,last_modified_by_user_id=?,total_amount=?,total_items=?,version=? where id=? and version=?
-2026-05-26T12:53:20.652-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Removed
+2026-05-26T15:06:41.074-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Removed
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.655-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.655-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.655-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.078-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.078-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.078-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.656-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.079-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.659-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.659-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.659-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.082-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.082-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.082-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
 Hibernate: insert into shopping_cart_item (available,created_at,created_by_user_id,last_modified_at,last_modified_by_user_id,name,price,product_id,quantity,&quot;shopping_cart_id&quot;,total_amount,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.660-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
-2026-05-26T12:53:20.660-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Added
+2026-05-26T15:06:41.083-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.083-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Added
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,i1_0.&quot;shopping_cart_id&quot;,i1_0.id,i1_0.available,i1_0.created_at,i1_0.created_by_user_id,i1_0.last_modified_at,i1_0.last_modified_by_user_id,i1_0.name,i1_0.price,i1_0.product_id,i1_0.quantity,i1_0.total_amount,i1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; left join shopping_cart_item i1_0 on scpe1_0.id=i1_0.&quot;shopping_cart_id&quot; where scpe1_0.id=?
 Hibernate: update &quot;shopping_cart&quot; set created_at=?,created_by_user_id=?,&quot;customer_id&quot;=?,last_modified_at=?,last_modified_by_user_id=?,total_amount=?,total_items=?,version=? where id=? and version=?
-2026-05-26T12:53:20.662-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Emptied
+2026-05-26T15:06:41.085-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Emptied
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.665-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.665-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.665-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.087-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.087-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.087-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select count(*) from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where c1_0.id=?
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.668-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.089-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
 Hibernate: select count(*) from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.673-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.673-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.673-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.094-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.094-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.094-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.675-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.095-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,i1_0.&quot;shopping_cart_id&quot;,i1_0.id,i1_0.available,i1_0.created_at,i1_0.created_by_user_id,i1_0.last_modified_at,i1_0.last_modified_by_user_id,i1_0.name,i1_0.price,i1_0.product_id,i1_0.quantity,i1_0.total_amount,i1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; left join shopping_cart_item i1_0 on scpe1_0.id=i1_0.&quot;shopping_cart_id&quot; where scpe1_0.id=?
 Hibernate: insert into shopping_cart_item (available,created_at,created_by_user_id,last_modified_at,last_modified_by_user_id,name,price,product_id,quantity,&quot;shopping_cart_id&quot;,total_amount,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?)
 Hibernate: update &quot;shopping_cart&quot; set created_at=?,created_by_user_id=?,&quot;customer_id&quot;=?,last_modified_at=?,last_modified_by_user_id=?,total_amount=?,total_items=?,version=? where id=? and version=?
-2026-05-26T12:53:20.680-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Added
+2026-05-26T15:06:41.099-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Item Added
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.684-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.684-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.684-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.103-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.103-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.103-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.685-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.104-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.689-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.689-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.689-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.108-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.108-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.108-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.690-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.109-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: select cpe1_0.id,cpe1_0.address_city,cpe1_0.address_complement,cpe1_0.address_neighborhood,cpe1_0.address_number,cpe1_0.address_state,cpe1_0.address_street,cpe1_0.address_zip_code,cpe1_0.archived,cpe1_0.archived_at,cpe1_0.birth_date,cpe1_0.created_by_user_id,cpe1_0.document,cpe1_0.email,cpe1_0.first_name,cpe1_0.last_modified_at,cpe1_0.last_modified_by_user_id,cpe1_0.last_name,cpe1_0.loyalty_points,cpe1_0.phone,cpe1_0.promotion_notifications_allowed,cpe1_0.registered_at,cpe1_0.version from &quot;customer&quot; cpe1_0 where cpe1_0.id=?
 Hibernate: insert into &quot;customer&quot; (address_city,address_complement,address_neighborhood,address_number,address_state,address_street,address_zip_code,archived,archived_at,birth_date,created_by_user_id,document,email,first_name,last_modified_at,last_modified_by_user_id,last_name,loyalty_points,phone,promotion_notifications_allowed,registered_at,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.695-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
-2026-05-26T12:53:20.695-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
-2026-05-26T12:53:20.695-03:00  INFO 24128 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
+2026-05-26T15:06:41.114-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.c.CustomerEventListener      : CustomerRegisteredEvent listen 1
+2026-05-26T15:06:41.114-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : Welcome John
+2026-05-26T15:06:41.114-03:00  INFO 25870 --- [ordering] [    Test worker] .n.c.CustomerNotificationServiceFakeImpl : User your email to access your account johndoe@email.com
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 Hibernate: insert into &quot;shopping_cart&quot; (created_at,created_by_user_id,&quot;customer_id&quot;,last_modified_at,last_modified_by_user_id,total_amount,total_items,version,id) values (?,?,?,?,?,?,?,?,?)
-2026-05-26T12:53:20.696-03:00  INFO 24128 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
+2026-05-26T15:06:41.115-03:00  INFO 25870 --- [ordering] [    Test worker] c.a.a.o.i.l.s.ShoppingCartEventListener  : Shopping cart event received: Cart Created
 Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1_0.&quot;customer_id&quot;,c1_0.id,c1_0.address_city,c1_0.address_complement,c1_0.address_neighborhood,c1_0.address_number,c1_0.address_state,c1_0.address_street,c1_0.address_zip_code,c1_0.archived,c1_0.archived_at,c1_0.birth_date,c1_0.created_by_user_id,c1_0.document,c1_0.email,c1_0.first_name,c1_0.last_modified_at,c1_0.last_modified_by_user_id,c1_0.last_name,c1_0.loyalty_points,c1_0.phone,c1_0.promotion_notifications_allowed,c1_0.registered_at,c1_0.version,scpe1_0.last_modified_at,scpe1_0.last_modified_by_user_id,scpe1_0.total_amount,scpe1_0.total_items,scpe1_0.version from &quot;shopping_cart&quot; scpe1_0 join &quot;customer&quot; c1_0 on c1_0.id=scpe1_0.&quot;customer_id&quot; where scpe1_0.id=?
 </pre>
 </span>
@@ -294,7 +294,7 @@ Hibernate: select scpe1_0.id,scpe1_0.created_at,scpe1_0.created_by_user_id,scpe1
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 26, 2026, 12:53:22 PM</p>
+<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 26, 2026, 3:06:43 PM</p>
 </div>
 </div>
 </body>
